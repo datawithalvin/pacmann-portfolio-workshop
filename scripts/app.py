@@ -113,6 +113,18 @@ def update_dashboard(selected_year):
         )
         
         return fig
+        
+        # Update colorbar location and orientation
+        fig.update_coloraxes(
+            showscale=True,
+            colorbar=dict(
+                len=0.3, yanchor='bottom', y=0,
+                xanchor='center',
+                thickness=10, title='Fire Radiative Power',
+                orientation='h', title_side="top")
+        )
+        
+        return fig
     
     def create_top10_city(dataframe):
         grouped = dataframe.groupby(["regency_city"]).agg(
@@ -202,7 +214,7 @@ def update_dashboard(selected_year):
         fig.update_layout(title="Proporsi Tingkat Confidence Api", title_font_size=14)
         fig.update_xaxes(title='Tingkat Confidence')
         fig.update_yaxes(title='Persentase')
-        fig.update_traces(texttemplate='%{text:.2f}%', textposition='outside', textfont_size=10)
+        fig.update_traces(texttemplate='%{text:.2f}%', textposition='outside', textfont_size=11)
 
         return fig
 
