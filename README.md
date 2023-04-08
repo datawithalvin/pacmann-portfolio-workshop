@@ -10,3 +10,6 @@ The dashboard is built using Python's Dash framework, which is a powerful librar
 - Explore the distribution of fire hotspots across Indonesia with a density map.
 - Analyze daily fire hotspots data using a line chart.
 - Examine the proportion of fire hotspots by confidence level.
+
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
