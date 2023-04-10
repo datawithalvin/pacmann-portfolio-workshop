@@ -11,6 +11,8 @@ main_df = pd.read_csv(filepath, parse_dates=["acq_date"])
 # -------- Build components ---------
 
 app = Dash(__name__, external_stylesheets=[dbc.themes.DARKLY])
+server = app.server
+
 
 mytitle = dcc.Markdown("Dashboard Pemantauan Titik Api di Indonesia")
 
@@ -215,6 +217,6 @@ def update_dashboard(selected_year):
 
 # -------- Run app ---------
 if __name__ == '__main__':
-    app.run_server(debug=True, port=8054)
+    app.run_server(debug=True)
 
    
