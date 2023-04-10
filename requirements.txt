@@ -1,0 +1,6 @@
+geopandas
+shapely
+plotly
+dash
+dash_bootstrap_components
+pandas
