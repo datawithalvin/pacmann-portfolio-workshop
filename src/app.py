@@ -5,7 +5,7 @@ import plotly.express as px
 import pandas as pd
 
 # -------- Load dataset ---------
-filepath = "../datasets/preprocessed-data.csv"
+filepath = "datasets/preprocessed-data.csv"
 main_df = pd.read_csv(filepath, parse_dates=["acq_date"])
 
 # -------- Build components ---------
